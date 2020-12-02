@@ -1,16 +1,18 @@
 #include <iostream>
 
 using namespace std;
+
 int main()
 {
-	int sum = 0;
+	ios::sync_with_stdio(false), cout.tie(0), cin.tie(0);
+	
+	int r1, r2, avrg;
+	
+	cin >> r1;
+	cin >> avrg;
 
-	for (int i = 0; i < 5; i++)
-	{
-		int a = 0;
-		cin >> a;
-		sum += a * a;
-	}
-	cout << sum % 10 << endl;
-	return sum;
+	r2 = avrg * 2 - r1;
+
+	cout << r2;
+	return 0;
 }
