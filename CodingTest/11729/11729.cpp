@@ -10,7 +10,7 @@ void Hanoi(int n, int from, int to, int by)
 	}
 	else
 	{
-		Hanoi(n - 1, from, to, by);
+		Hanoi(n - 1, from, by, to);
 		cout << from << " " << to << "\n";
 		Hanoi(n - 1, by, to, from);
 	}
